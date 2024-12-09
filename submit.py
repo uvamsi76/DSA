@@ -1,0 +1,23 @@
+for i in range(int(input())):
+    s=input()
+    if(s[1]=='>'):
+        if(int(s[0])>int(s[2])):
+            print(s)
+        elif(int(s[0])==int(s[2])):
+            print(s[0]+'='+s[2])
+        else:
+            print(s[0]+'<'+s[2])
+    elif(s[1]=='<'):
+        if(int(s[0])>int(s[2])):
+            print(s[0]+'>'+s[2])
+        elif(int(s[0])==int(s[2])):
+            print(s[0]+'='+s[2])
+        else:
+            print(s)
+    elif(s[1]=='='):
+        if(int(s[0])>int(s[2])):
+            print(s[0]+'>'+s[2])
+        elif(int(s[0])==int(s[2])):
+            print(s[0]+'='+s[2])
+        else:
+            print(s[0]+'<'+s[2])
